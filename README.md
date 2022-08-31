@@ -1,14 +1,22 @@
-# Compound-Protein Interaction dataset for Machine Learning Prediction
+# Compound-Protein Interaction dataset for Machine Learning
 
 ## Introduction
 
-In this repository, I provide Compound-Protein Interactions (CPI) dataset for Machine Learning, Deep Learning prediction.
+Proteins are biomolecules that perform essential functions in living organisms and represent the majority of targets in drug discovery.
+In small molecule drug discovery, where the interaction of a compound with a protein modifies the function of a disease-related protein,
+a screening process is required in the initial stage to identify compounds that are likely to bind to the target protein from a large number of small molecule compounds.
+This is done computationally through virtual screening.
+
+This repository provides a script to prepare a dataset for virtual screening to predict compound-protein interactions.
+The dataset includes the data proposed by *Liu et al*.
+atasets for virtual screening based on literature have challenges such as lack of labels for non-interacting compound-protein combinations that interact,
+and imbalance in the ratio of positives and negatives, which makes learning difficult.
+This dataset attempts to improve on these points.
 
 ## Dataset
 
-This dataset is consists of human and C. elegans CPI datasets defined by *Liu et al*.
-
-The outcome is a binary label (1 for interaction and 0 for not).
+The dataset consists of two species, human and C. elegans.
+Outcome labes are binary. 1 for interaction and 0 for none.
 
 ## Usage
 
