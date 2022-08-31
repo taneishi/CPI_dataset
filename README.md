@@ -6,10 +6,9 @@ In this repository, I provide Compound-Protein Interactions (CPI) dataset for Ma
 
 ## Dataset
 
-This dataset is consists of human and C.elegans CPI datasets defined by *Liu et al*.
+This dataset is consists of human and C. elegans CPI datasets defined by *Liu et al*.
 
-n input is the pair of a SMILES format of compound and an amino acid sequence of protein; an output is a binary label (1 for interaction and 0 for not).
-The SMILES is converted with RDKit.
+The outcome is a binary label (1 for interaction and 0 for not).
 
 ## Usage
 
