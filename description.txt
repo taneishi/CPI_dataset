@@ -1,0 +1,53 @@
+# Original dataset description
+
+Compound-Protein Interactions were retrieved from DrugBank 4.1 (Wishart et al., 2008), Matador (Gnther et al., 2008) and STITCH 4.0 (Kuhn et al., 2014). 
+DrugBank and Matador are manually curated databases and STITCH is a comprehensive database that collects CPIs from four different sources: experiments, databases, text mining and predicted interactions.
+
+1. positive samples
+
+- Human: [positive samples](data/data0/homo_positive.csv)
+- C. elegans: [positive samples](data/data0/celegan_positive.csv)
+    
+2. High-quality negative samples
+
+- Human: [high-quality negative samples](data/data1/human_high-quality_negative_samples.csv)
+- C. elegans: [high-quality negative samples](data/data1/elegans_high-quality_negative_samples.csv)
+- Mouse: [high-quality negative samples](data/data1/mouse_high-quality_negative_samples.csv)
+- Fruit fly: [high-quality negative samples](data/data1/fruit_fly_high-quality_negative_samples.csv)
+
+    - Chemical_cid(1st column): drug identify by PubChem
+    - Uniport_accession(2nd column): target identify by Uniprot
+    - Score(3rd column): strength of interaction of the drug and target,a higher score means that the connection strength is lower
+
+3. Samples for SVM, L1, L2, Random Forest and Bayes
+
+- Human: [Samples with high-quality negative samples](data/data2/human/samples_with_high_quality_negative_samples.csv)
+- [Samples with random negative samples](data/data2/human/samples_with_random_negative_samples.csv)
+- C. elegans: [Samples with high-quality negative samples](data/data2/elegans/samples_with_high_quality_negative_samples.csv)
+- [Samples with random negative samples](data/data2/elegans/samples_with_random_negative_samples.csv)
+
+4.  Similarity and interaction matrix for BLM, RLS and KBMF
+
+- Human: [Chemical similarity matrix](data/data3/human/chemical_simility_matrix.txt)
+- [Protein similarity matrix](data/data3/human/protein_similarity_matrix.txt)
+- [Interaction matrix with high-quality negative samples](data/data3/human/high_quality_negative_interaction_matrix.txt)
+- [Interaction matrix with random negative samples](data/data3/human/random_negative_interaction_matrix.txt)
+
+- C. elegans: [Chemical similarity matrix](data/data3/elegans/chemical_simility_matrix.txt)
+- [Protein similarity matrix](data/data3/elegans/protein_similarity_matrix.txt)
+- [Interaction matrix with high-quality negative samples](data/data3/elegans/high_quality_negative_interaction_matrix.txt)
+- [Interaction matrix with random negative samples](data/data3/elegans/random_negative_interaction_matrix.txt)
+
+5. Prediction result
+
+- [Prediction result of human dataset in large scale](data/data4/predict_large_dataset.csv)
+- [Prediction result of human dataset in small scale](data/data5/predict_small_dataset.csv)
+
+    - Chemical_cid(1st column): drug identify by PubChem
+    - Uniport_accession(2nd column): target identify by Uniprot
+    - Score(3rd column): A higher score means that the two are more likely to have contact with each other 
+
+6. Data concerning the experiments done with the affinities found by Davis et al (2011)
+
+- [Positive Sample](data/data6/positive_sample_extract_from_Davis.csv)
+- [Negative Sample](data/data6/negative_sample_extract_from_Davis.csv)
